@@ -31,6 +31,7 @@ for i in lista:
         igaze = False
         break
 
+print(igaze)
 #ötötdik feladat:
 
 szorzat = 2
@@ -40,3 +41,31 @@ for i in lista:
 print(szorzat)
 
 ##hatodik feladat:
+db = 0
+for i in lista:
+    if i % 18 == 0:
+        db += 1
+
+print(db)
+
+#hetedik feladat:
+for i in lista:
+    if i % 18 == 0 or i % 17 == 0:
+        print(i ** (1. / 3))
+
+#nyolcadik feladat:
+min = lista[0]
+masodikMin = lista[1]
+for i in lista:
+    if i < min:
+        masodikMin = min
+        min = i
+    else:
+        if i < masodikMin and i != min:
+            masodikMin = i
+
+print(masodikMin)
+
+"""
+vége
+"""
